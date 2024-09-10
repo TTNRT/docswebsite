@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/logo.png">
   <link href="https://cdn.ttnrtsite.me/styles/halfmoon/halfmoon.min.css" rel="stylesheet">
   <title>{% if eleventyNavigation.title %}{{ eleventyNavigation.title }} {% endif %} | TTNRT</title>
   <link href="/pagefind/pagefind-modular-ui.css" rel="stylesheet" />
   <script src="/pagefind/pagefind-modular-ui.js"></script>
+  <link rel="manifest" href="/manifest.json" />
   <link rel="stylesheet" href="https://cdn.ttnrtsite.me/styles/fontawesome/css/all.min.css" />
   <script src="/config.js"></script>
 </head>
@@ -48,6 +50,11 @@ Docs
 <div id="app" class="p-2 mb-2">
 <div class="container-fluid">
 <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-example" class="btn btn-secondary d-md-none">Open sidebar</button>
+<details>
+<summary>On this page</summary>
+{{ content | toc | safe }}
+</details>
+
 {{ content | safe }}
 <br>
 

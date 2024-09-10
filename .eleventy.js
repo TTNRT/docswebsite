@@ -1,7 +1,22 @@
 const { execSync } = require('child_process')
 const fs = require('fs/promises');
+const pluginTOC = require('@uncenter/eleventy-plugin-toc')
+const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function (eleventyConfig) {
+	const mdOptions = { linkify: false, html: true };
+	const mdAnchorOpts = {
+	  permalink: markdownItAnchor.permalink.headerLink(),
+	  level: [1, 2, 3, 4],
+	};
+	eleventyConfig.addPlugin(pluginTOC, {
+		tags: ['h1', 'h2', 'h3', 'h4', 'h5']
+	});
+	eleventyConfig.setLibrary(
+		'md',
+		markdownIt(mdOptions).use(markdownItAnchor, mdAnchorOpts),
+	);
 	eleventyConfig.addPassthroughCopy({ static: "/" });
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.on('eleventy.after', () => {
@@ -10,6 +25,7 @@ module.exports = function (eleventyConfig) {
 	  eleventyConfig.on('eleventy.before', async ({ dir }) => {
 		await fs.rm(dir.output, { recursive: true, force: true });
 	});
+
 	eleventyConfig.addPairedShortcode("admonition", function(content, type, title) {
 		let titleStr = "";
 		if(title) {
