@@ -1,0 +1,7 @@
+.header-anchor {
+    text-decoration: none;
+}
+
+*:hover > .header-anchor {
+    transition: all .25s linear;
+}

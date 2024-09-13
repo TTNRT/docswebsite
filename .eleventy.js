@@ -7,8 +7,13 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function (eleventyConfig) {
 	const mdOptions = { linkify: false, html: true };
 	const mdAnchorOpts = {
-	  permalink: markdownItAnchor.permalink.headerLink(),
-	  level: [1, 2, 3, 4],
+	  permalink:  markdownItAnchor.permalink.linkInsideHeader({
+    symbol: `
+      <span>#</span>
+    `,
+    placement: 'after'
+  }),
+	  level: [1, 2, 3, 4, 5],
 	};
 	eleventyConfig.addPlugin(pluginTOC, {
 		tags: ['h1', 'h2', 'h3', 'h4', 'h5']
