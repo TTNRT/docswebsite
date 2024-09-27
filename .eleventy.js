@@ -2,6 +2,8 @@ const { execSync } = require('child_process')
 const fs = require('fs/promises');
 const pluginTOC = require('@uncenter/eleventy-plugin-toc')
 const markdownIt = require('markdown-it')
+const syntaxHighlightingPlugin = require('@11ty/eleventy-plugin-syntaxhighlight');
+const markdownItClass = require('markdown-it-class');
 const markdownItAnchor = require('markdown-it-anchor')
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function (eleventyConfig) {
@@ -15,12 +17,13 @@ module.exports = function (eleventyConfig) {
 	});
 	eleventyConfig.setLibrary(
 		'md',
-		markdownIt(mdOptions).use(markdownItAnchor, mdAnchorOpts),
+		markdownIt(mdOptions).use(markdownItClass).use(markdownItAnchor, mdAnchorOpts),
 	);
 	eleventyConfig.addPassthroughCopy({ static: "/" });
+	eleventyConfig.addPlugin(syntaxHighlightingPlugin);
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.on('eleventy.after', () => {
-		execSync(`npx pagefind --source _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
+		execSync(`npx pagefind --site _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
 	  })
 	  eleventyConfig.on('eleventy.before', async ({ dir }) => {
 		await fs.rm(dir.output, { recursive: true, force: true });

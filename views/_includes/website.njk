@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="og:title" content="{% if eleventyNavigation.title %}{{ eleventyNavigation.title }} {% endif %} | TTNRT Docs">
+  <meta name="description" content="TTNRT Documentation">
+  <meta name="og:description" content="TTNRT Documentation">
+  <meta name="keywords" content="website, TTNRT, software, TTNRT Corporation, new, technology, tech">
+  <meta name="author" content="TTNRT Corporation">
   <link rel="icon" type="image/x-icon" href="https://cdn.ttnrtsite.me/images/logo.png">
   <link href="https://cdn.ttnrtsite.me/styles/halfmoon/halfmoon.min.css" rel="stylesheet">
   <title>{% if eleventyNavigation.title %}{{ eleventyNavigation.title }} {% endif %} | TTNRT Docs</title>
@@ -10,9 +15,9 @@
   <script src="/pagefind/pagefind-modular-ui.js"></script>
   <link rel="manifest" href="/manifest.json" />
   <link rel="stylesheet" href="https://cdn.ttnrtsite.me/styles/fontawesome/css/all.min.css" />
+  <script src="https://cdn.ttnrtsite.me/scripts/jquery-3.7.1.min.js"></script>
   <link rel="stylesheet" href="/config.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
   <script src="/config.js"></script>
 </head>
 <body class="d-flex flex-column" style="min-height: 100vh;">
@@ -33,15 +38,14 @@ Docs
       </div>
       <ul class="sidebar-nav">
 {% for entry in collections.all | eleventyNavigation %}
-<li>
-    <h5 class="sidebar-header">
-      <a href="{{ entry.url }}">{{ entry.title }}</a>
+<li class="nav-item border-bottom">
+    <h5>
+      <a class="nav-link {% if entry.url == page.url %}active{% endif %}" href="{{ entry.url }}">{{ entry.title }}</a>
     </h5>
 </li>
-<li><hr class="sidebar-divider"></li>
     {% if entry.children.length > 0 %} {% for child in entry.children %}
     <li class="nav-item">
-    <a href="{{ child.url }}" class="nav-link">{{ child.title }}</a>
+    <a href="{{ child.url }}" class="nav-link {% if child.url in page.url %} active{% endif %}">{{ child.title }}</a>
 </li>
     {% endfor %} {% endif %} 
     <br />
@@ -52,7 +56,8 @@ Docs
 
 <div id="app" class="p-2 mb-2">
 <div class="container-fluid">
-<button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-example" class="btn btn-secondary d-md-none">Open sidebar</button>
+<button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-example" class="btn btn-secondary d-md-none"><i class="fa-solid fa-sliders"></i></button>
+
 <details>
 <summary>On this page</summary>
 {{ content | toc | safe }}
@@ -66,6 +71,19 @@ Docs
 <a class="btn btn-primary" role="button" href="{{ urls.docsSourcesMaster }}/{{ page.inputPath }}" target="_blank"><i class="fa-solid fa-file"></i> View source</a>
 <a class="btn btn-primary" role="button" href="{{ urls.commitHistoryMaster }}/{{ page.inputPath }}" target="_blank"><i class="fa-solid fa-clock"></i> Page history</a>
 </div>
+</div>
+<br>
+<div class="text-end">
+<a class="btn btn-secondary " href="https://feedback.ttnrtsite.me" role="button" target="_blank"><i class="fa-solid fa-circle-question"></i> Send feedback</a>
+</div>
+<br>
+<div class="dropdown text-end">
+<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Toggle color mode</button>
+<ul class="dropdown-menu dropdown-menu-end">
+<li><button type="button" class="dropdown-item" data-bs-theme-value="light"><i class="fa-solid fa-sun"></i><span class="ms-2">Light</span></button></li>
+<li><button type="button" class="dropdown-item" data-bs-theme-value="dark"><i class="fa-solid fa-moon"></i><span class="ms-2">Dark</span></button></li>
+<li><button type="button" class="dropdown-item" data-bs-theme-value="auto"><i class="fa-solid fa-circle-half-stroke"></i><span class="ms-2">Auto</span></button>
+</li></ul>
 </div>
 
 </div>
