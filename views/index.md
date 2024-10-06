@@ -4,5 +4,4 @@ eleventyNavigation:
 layout: "website.njk"
 ---
 
-# Home
-Please chosse your topic on the sidebar.
+Please chose your topic on the sidebar.

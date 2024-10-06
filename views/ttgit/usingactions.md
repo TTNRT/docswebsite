@@ -5,8 +5,6 @@ eleventyNavigation:
 layout: "website.njk"
 ---
 
-# Using the built-in Actions
-
 The use Gitea Actions (now called TTGit Actions) is a way to automate workflows much easier, rather than pushing files yourself to your repository. This service is **free without any charges**, which means that we will not pay or have usage on your account when using this service.
 
 ### Preparing your runner

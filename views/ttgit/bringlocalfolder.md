@@ -5,8 +5,6 @@ eleventyNavigation:
 layout: "website.njk"
 ---
 
-# Bring a local folder to remote repo
-
 This page will discuss on how to add your local folder to your remote Git repo from TTGit. For this to work you should have the following:
 
 * A repository on TTGit

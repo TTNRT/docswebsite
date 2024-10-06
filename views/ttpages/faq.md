@@ -5,8 +5,6 @@ eleventyNavigation:
 layout: "website.njk"
 ---
 
-# FAQ
-
 > Q: What is it about?
 >
 > A: It's all about hosting static sites using TTGit's API and backend.

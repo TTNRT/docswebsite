@@ -13,7 +13,11 @@ module.exports = function (eleventyConfig) {
 	  level: [1, 2, 3, 4, 5],
 	};
 	eleventyConfig.addPlugin(pluginTOC, {
-		tags: ['h1', 'h2', 'h3', 'h4', 'h5']
+		tags: ['h1', 'h2', 'h3', 'h4', 'h5'],
+		wrapper: function (toc) {
+			toc = toc.replaceAll('<a', "<a class='sidebar-link'");
+			return `${toc}`;
+		},
 	});
 	eleventyConfig.setLibrary(
 		'md',

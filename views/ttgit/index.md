@@ -4,5 +4,3 @@ eleventyNavigation:
     title: TTGit
 layout: "website.njk"
 ---
-
-# TTGit

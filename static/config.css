@@ -40,3 +40,16 @@ blockquote {
 blockquote > p {
   margin-left: 12px;
 }
+
+#toc ol{
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#toc li {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+#toc li a {
+  text-decoration: none;
+}

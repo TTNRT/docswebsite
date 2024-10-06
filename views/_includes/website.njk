@@ -21,73 +21,22 @@
   <script src="/config.js"></script>
 </head>
 <body class="d-flex flex-column" style="min-height: 100vh;">
+{% include 'navbar-top.njk' %}
+{% include 'navbar-side.njk' %}
 
-<nav class="sidebar offcanvas-start offcanvas-md" tabindex="-1" id="sidebar-example">
-<div class="offcanvas-header border-bottom border-secondary border-opacity-25">
-<a class="sidebar-brand" href="/">
-<img src="/logo.png" alt="Logo" width="20" class="d-inline-block align-text-top">
-Docs
-</a>
-<button type="button" class="btn-close d-md-none" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#sidebar-example"></button>
-</div>
-<div class="offcanvas-body">
-      <div class="mt-2 mb-3">
-        <input type="text" class="form-control" placeholder="Search the docs" id="search-input" />
-        <div class="mt-10 font-size-12">Press <kbd>/</kbd> to focus</div>
-        <div id="search-results"></div>
-      </div>
-      <ul class="sidebar-nav">
-{% for entry in collections.all | eleventyNavigation %}
-<li class="nav-item border-bottom">
-    <h5>
-      <a class="nav-link {% if entry.url == page.url %}active{% endif %}" href="{{ entry.url }}">{{ entry.title }}</a>
-    </h5>
-</li>
-    {% if entry.children.length > 0 %} {% for child in entry.children %}
-    <li class="nav-item">
-    <a href="{{ child.url }}" class="nav-link {% if child.url in page.url %} active{% endif %}">{{ child.title }}</a>
-</li>
-    {% endfor %} {% endif %} 
-    <br />
-    {%- endfor %}
-      </ul>
-    </div>
-</nav>
-
-<div id="app" class="p-2 mb-2">
 <div class="container-fluid">
-<button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-example" class="btn btn-secondary d-md-none"><i class="fa-solid fa-sliders"></i></button>
+{% include 'tocsidebar.njk' %}
+<article>
+{% if eleventyNavigation.title %}<h1>{{ eleventyNavigation.title }}</h1>{% endif %} 
 
-<details>
-<summary>On this page</summary>
-{{ content | toc | safe }}
-</details>
+{% if eleventyNavigation.draft %}
+<strong>This page is subjected to be updated! Note that some content may not be accurate for the time being.</strong>
+{% endif %}
 
 {{ content | safe }}
-<br>
-
-<div class="card">
-<div class="card-body">
-<a class="btn btn-primary" role="button" href="{{ urls.docsSourcesMaster }}/{{ page.inputPath }}" target="_blank"><i class="fa-solid fa-file"></i> View source</a>
-<a class="btn btn-primary" role="button" href="{{ urls.commitHistoryMaster }}/{{ page.inputPath }}" target="_blank"><i class="fa-solid fa-clock"></i> Page history</a>
-</div>
-</div>
-<br>
-<div class="text-end">
-<a class="btn btn-secondary " href="https://feedback.ttnrtsite.me" role="button" target="_blank"><i class="fa-solid fa-circle-question"></i> Send feedback</a>
-</div>
-<br>
-<div class="dropdown text-end">
-<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Toggle color mode</button>
-<ul class="dropdown-menu dropdown-menu-end">
-<li><button type="button" class="dropdown-item" data-bs-theme-value="light"><i class="fa-solid fa-sun"></i><span class="ms-2">Light</span></button></li>
-<li><button type="button" class="dropdown-item" data-bs-theme-value="dark"><i class="fa-solid fa-moon"></i><span class="ms-2">Dark</span></button></li>
-<li><button type="button" class="dropdown-item" data-bs-theme-value="auto"><i class="fa-solid fa-circle-half-stroke"></i><span class="ms-2">Auto</span></button>
-</li></ul>
+</article>
 </div>
 
-</div>
-</div>
 <script>
       window.addEventListener('DOMContentLoaded', (event) => {
         const instance = new PagefindModularUI.Instance();
