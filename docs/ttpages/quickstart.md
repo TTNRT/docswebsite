@@ -1,11 +1,6 @@
 ---
-eleventyNavigation:
-    key: ttpages
-    title: TTPages
-layout: "website.njk"
+title: Quick Start
 ---
-
-# Quick start
 
 Follow this quick start guide to get your site up and running with TTPages.
 

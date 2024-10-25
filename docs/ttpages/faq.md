@@ -1,8 +1,5 @@
 ---
-eleventyNavigation:
-    parent: ttpages
-    title: FAQ on TTPages
-layout: "website.njk"
+title: FAQ
 ---
 
 > Q: What is it about?
