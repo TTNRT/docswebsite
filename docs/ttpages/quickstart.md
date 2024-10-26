@@ -25,11 +25,11 @@ This section has two options that you can pick from, depending on your setup.
 
 Create your repo with any name you like. The repo should have a `pages` branch, along with the `pages` topic. Once you created the repo, you may upload your static data to it. Once done, go to this URL in this form. `https://<owner>.ttnrtsite.io/<reponame>/<path>`
 
-- Reponame is your repository name
-- Owner is your username
+-  `<reponame>` is your repository name
+- `<owner>` is your username
 
 ### Option two
 
 Create your repo, but with a name like this. `<owner>.ttnrtsite.io`. The repo should also have a `pages` branch, along with the `pages` topic. Once you created the repo, you may upload your static data to it. Once done, go to this URL in this form. `https://<owner>.ttnrtsite.io/`
 
-- Owner is your username
+- `<owner>` is your username

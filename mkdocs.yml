@@ -82,3 +82,7 @@ nav:
     - Using an IDE editor: ttgit/ideeditor.md
     - Using the actions interface: ttgit/actionssetup.md
     - Using Woodpecker CI: ttgit/woodpeckerci.md
+  - myTT:
+    - Creating your account: mytt/accountcreate.md
+    - Customizing your profile: mytt/profilecustomize.md
+    - Account profile: mytt/accountprofile.md
