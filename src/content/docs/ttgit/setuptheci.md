@@ -1,10 +1,10 @@
 ---
-title: Using Woodpecker CI
+title: Setup the CI interface
 ---
 
-!!! note
-
-    The CI interface is only available for those who requested it. It is not available for public users. If you would like to request access to the CI, contact us using our email!
+:::note
+The CI interface is only available for those who requested it. It is not available for public users. If you would like to request access to the CI, contact us using our email!
+:::
 
 This section will go over on using the Woodpecker CI service.
 
@@ -23,15 +23,15 @@ When you think of a workflow, you might say it's like the actions interface, exp
 ## Setting up your repository
 First off, you need to add your repository to the interface. In the image below, you can see how we add it to the system.
 
-![ci-addingrepo](../assets/ci-addingrepo.gif)
+![ci-addingrepo](./ci-addingrepo.gif)
 
 As you can see, it's very straightforward. You just have to connect your account to the service and find what repository you're looking for! If you want to add a secret token, you can do that. Remember to not share your secret!
 
-!!! note
+:::note
+If you want every repository that you set to use your token, you have set it in your user settings within the CI interface. Make sure you are using a token that is created from TTGit, in case you are doing push events. The image below will show on doing so.
 
-    If you want every repository that you set to use your token, you have set it in your user settings withn the CI interface. Make sure you are using a token that is created from TTGit, in case you are doing push events. The image below will show on doing so.
-
-    ![ci-secretadd](../assets/ci-secretadd.gif)
+![ci-secretadd](./ci-secretadd.gif)
+:::
 
  
 Now that you have added your repository to the CI interface, let's make our workflow!
@@ -61,7 +61,7 @@ Go back to the CI website and find your repository that is containing your workf
 
 For this, we will run it from the CI interface. The image below will show on running it, and the output of the workflow.
 
-![ci-runworkflow](../assets/ci-runworkflow.gif)
+![ci-runworkflow](./ci-runworkflow.gif)
 
 ## Completed
 If you made it this far, then congrats! You know on how to use the Woodpecker CI service! Got any questions? Contact our support team!

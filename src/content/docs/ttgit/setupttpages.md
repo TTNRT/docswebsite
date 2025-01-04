@@ -1,5 +1,5 @@
 ---
-title: Quick Start
+title: Setting up TTPages
 ---
 
 Follow this quick start guide to get your site up and running with TTPages.
@@ -33,3 +33,20 @@ Create your repo with any name you like. The repo should have a `pages` branch, 
 Create your repo, but with a name like this. `<owner>.ttnrtsite.io`. The repo should also have a `pages` branch, along with the `pages` topic. Once you created the repo, you may upload your static data to it. Once done, go to this URL in this form. `https://<owner>.ttnrtsite.io/`
 
 - `<owner>` is your username
+
+## FAQ
+> Q: What is it about?
+>
+> A: It's all about hosting static sites using TTGit's API and backend.
+
+> Q: How does it work?
+>
+> A: The system works as a normal web serve would, expect it gathers data from TTGit to serve data from the repo you are requesting. The program is written in golang and is proxyed through nginx
+
+> Q: Is there support for custom domains?
+>
+> A: No. The code that is used for the software has no support for it.
+
+> Q: Can I use static site generators with it?
+>
+> A: Right now, testing for that is not ready at this time. However, such deployment would use docker based CI interfaces.
