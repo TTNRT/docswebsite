@@ -75,6 +75,23 @@ export default defineConfig({
 						{
 							label: 'Customizing your profile',
 							slug: 'mytt/profilecustomize'
+						},
+						{
+							label: 'Profile banner',
+							slug: 'mytt/profilebanner'
+						}
+					]
+				},
+				{
+					label: 'API',
+					items: [
+						{
+							label: 'Using the API',
+							slug: 'api/usingtheapi'
+						},
+						{
+							label: 'Grab myTT data',
+							slug: 'api/grabmyttdata'
 						}
 					]
 				}
