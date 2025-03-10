@@ -54,6 +54,10 @@ export default defineConfig({
 						{
 							label: 'Using an IDE editor',
 							slug: 'ttgit/usinganide'
+						},
+						{
+							label: 'Login methods',
+							slug: 'ttgit/loginmethods'
 						}
 					],
 				},

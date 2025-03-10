@@ -36,10 +36,10 @@ The response will look something like this.
   "stauts": 200,
   "data": {
     "id": 1,
-    "username": "ssp6904",
-    "fullname": "Shaun Hoffer",
+    "username": "username",
+    "fullname": "User account",
     "createdAt": "2024-11-06T22:01:36.000Z",
-    "avatar": "//www.gravatar.com/avatar/8fd99eded476864fea01c18a7e3e5686?s=110&r=pg&d=https%3A%2F%2Fmy.ttnrtsite.me%2Fusericon.png"
+    "avatar": "https://my.ttnrtsite.me/usericon.png"
   }
 }
 ```
@@ -47,4 +47,4 @@ The response will look something like this.
 You can see a part of the account information, this includes the ID, username, full name, creation date, and the avatar (is a gravatar URL). Other parts may be hidden from you to protect the user's privacy, which can be their email in this case.
 
 ## What you can do with it
-Using this, you can share your profile by using a script to fetch the data or a similer way to do it. Note that not all data cannot be seen or will be appended to whatever you add the data to. If you want to have a profile banner on your website using the API, you can do so by going to the "Profile banner" in the "myTT" section of our documentation! Again, it's up to you on how you're going to use it!
+Using this, you can share your profile by using a script to fetch the data or a similar way to do it. Note that not all data cannot be seen or will be appended to whatever you add the data to. If you want to have a profile banner on your website using the API, you can do so by going to the "Profile banner" in the "myTT" section of our documentation! Again, it's up to you on how you're going to use it!
