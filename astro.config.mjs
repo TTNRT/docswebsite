@@ -83,6 +83,10 @@ export default defineConfig({
 						{
 							label: 'Profile banner',
 							slug: 'mytt/profilebanner'
+						},
+						{
+							label: 'Privacy settings',
+							slug: 'mytt/privacy-settings'
 						}
 					]
 				},
