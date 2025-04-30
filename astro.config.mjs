@@ -32,20 +32,38 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ 
-							label: 'Using the actions interface', 
-							slug: 'ttgit/actionssetup' 
+							label: 'Actions interface', 
+							items: [
+								{
+									label: 'Woodpekcer CI',
+									slug: 'ttgit/actions/woodpecker'
+								},
+								{
+									label: 'Standard actions',
+									slug: 'ttgit/actions/actions'
+								},
+								{
+									label: 'Renovate bot',
+									slug: 'ttgit/actions/renovate-bot'
+								}
+							]
 						},
 						{
-							label: 'Customize your profile',
-							slug: 'ttgit/customizeprofile'
+							label: 'Customize your account',
+							items: [
+								{
+									label: 'Overview widget',
+									slug: 'ttgit/customize/overview'
+								},
+								{
+									label: 'Profile bio',
+									slug: 'ttgit/customize/bio'
+								}
+							]
 						},
 						{
 							label: 'Setup your Git client',
 							slug: 'ttgit/setupgitclient'
-						},
-						{
-							label: 'Setup the CI interface',
-							slug: 'ttgit/setuptheci'
 						},
 						{
 							label: 'Setting up TTPages',
@@ -57,7 +75,20 @@ export default defineConfig({
 						},
 						{
 							label: 'Login methods',
-							slug: 'ttgit/loginmethods'
+							items: [
+								{
+									label: 'Information',
+									slug: 'ttgit/loginmethods/information'
+								},
+								{
+									label: 'Google',
+									slug: 'ttgit/loginmethods/google'
+								},
+								{
+									label: 'GitHub',
+									slug: 'ttgit/loginmethods/github'
+								}
+							]
 						}
 					],
 				},
@@ -65,28 +96,42 @@ export default defineConfig({
 					label: 'MyTT',
 					items: [
 						{
-							label: 'Creating your account',
-							slug: 'mytt/accountcreate'
+							label: 'Account management',
+							items: [
+								{
+									label: 'Creating an account',
+									slug: 'mytt/account/creating'
+								},
+								{
+									label: 'Deleting your account',
+									slug: 'mytt/account/deletion'
+								},
+								{
+									label: 'Resetting your password',
+									slug: 'mytt/account/password-reset'
+								},
+								{
+									label: 'Privacy settings',
+									slug: 'mytt/account/privacy-settings'
+								}
+							]
 						},
 						{
-							label: 'Deleting your account',
-							slug: 'mytt/accountdeletion'
-						},
-						{
-							label: 'Resetting your account password',
-							slug: 'mytt/passwordreset'
-						},
-						{
-							label: 'Customizing your profile',
-							slug: 'mytt/profilecustomize'
-						},
-						{
-							label: 'Profile banner',
-							slug: 'mytt/profilebanner'
-						},
-						{
-							label: 'Privacy settings',
-							slug: 'mytt/privacy-settings'
+							label: 'Customize your profile',
+							items: [
+								{
+									label: 'Information',
+									slug: 'mytt/customize/information'
+								},
+								{
+									label: 'Bio widget',
+									slug: 'mytt/customize/bio'
+								},
+								{
+									label: 'Banner widget',
+									slug: 'mytt/customize/banner'
+								}
+							]
 						}
 					]
 				},
@@ -94,12 +139,21 @@ export default defineConfig({
 					label: 'API',
 					items: [
 						{
-							label: 'Using the API',
-							slug: 'api/usingtheapi'
+							label: 'Information',
+							slug: 'api/information'
 						},
 						{
-							label: 'Grab myTT data',
-							slug: 'api/grabmyttdata'
+							label: 'myTT',
+							items: [
+								{
+									label: 'Requesting data',
+									slug: 'api/mytt/request-data'
+								},
+								{
+									label: 'Profile banner',
+									slug: 'api/mytt/profile-banner'
+								}
+							]
 						}
 					]
 				}
