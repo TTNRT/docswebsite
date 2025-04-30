@@ -45,9 +45,7 @@ For setting up the bot with your repsitory, you need to add one file per the req
 ```
 
 ### Adding the bot
-Once you have you have commited the file to your repository, you need to add the bot as a contributor so that the bot has the required permissions to access your repository. If you don't do this, then the bot won't be able to access any of your source code. For adding the bot, go to your repository settings. From there, click on the "Collaborators" link located on the sidebar to the left. Click on the input box labled, "Search users", and search for the name, "renovate-bot". Once the bot has appeared, click on it, and you are done setting up the bot for your repository. If you are somewhat lost while following these steps, the image below will show you how to do it.
-
-![renovate-setup](/images/renovate-setup.gif)
+Once you have you have commited the file to your repository, you need to add the bot as a contributor so that the bot has the required permissions to access your repository. If you don't do this, then the bot won't be able to access any of your source code. For adding the bot, go to your repository settings. From there, click on the "Collaborators" link located on the sidebar to the left. Click on the input box labled, "Search users", and search for the name, "renovate-bot". Once the bot has appeared, click on it, and you are done setting up the bot for your repository.
 
 Now that you have setted up the bot for your repository, let's move on to how the bot will work with your programming language.
 
