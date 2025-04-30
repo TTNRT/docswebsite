@@ -17,9 +17,9 @@ export default defineConfig({
 		starlight({
 			title: 'TTNRT Docs',
 			description: 'Our documentation website for our services',
-			social: {
-				github: 'https://github.com/TTNRT',
-			},
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/TTNRT' }
+			],
 			logo: {
 				src: './src/assets/logo.png',
 			},
