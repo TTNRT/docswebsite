@@ -1,5 +1,5 @@
 ---
-title: Resetting your account password
+title: Resetting your password
 ---
 This page will go over the password reset process for your myTT account.
 

@@ -1,7 +1,7 @@
 ---
-title: Grab myTT data
+title: Requesting data
 ---
-This page will go over on grabbing your myTT account data via the TTNRT API.
+This page will go over on requesting your myTT account data via the TTNRT API.
 
 :::note
 This route has been moved to the myTT API routes. The URL will be different in this section!

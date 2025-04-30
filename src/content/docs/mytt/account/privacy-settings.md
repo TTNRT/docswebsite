@@ -1,5 +1,5 @@
 ---
-title: "Setting your privacy settings"
+title: "Privacy settings"
 ---
 
 This page will go over your account privacy settings
@@ -22,7 +22,7 @@ By default, your profile page is not hidden from anyone. To hide your profile pa
 
 Click on the enable option and submit your changes. When you go back to your profile page, it's still visible, but only for you! When someone is logged in or not and wants to go to your profile page, they will get this error like this.
 
-![privatepage-example.png](./privatepage-example.png)
+![privatepage-example.png](/images/privatepage-example.png)
 
 This error says that the user has set their privacy settings to hide their profile page from others. If you want to unhide your profile, go back to your account privacy settings and find the "Hide your profile" section. Click the dropdown bar and click on the disable option. Submit your changes. This time, when someone goes to your profile page, it's now visible to them.
 
@@ -45,6 +45,6 @@ By default, your bio is not hidden from anyone. To hide your bio, go to your acc
 
 Click on the enable option and submit your changes. When you go back to your profile page, your bio is still visible, but only for you! When someone is logged in or not and wants to go to your profile page, your bio will look like this.
 
-![privatebio-example.png](./privatebio-example.png)
+![privatebio-example.png](/images/privatebio-example.png)
 
 This error says that the user has set their privacy settings to hide their bio from others. If you want to unhide your bio, go back to your account privacy settings and find the "Hide your bio" section. Click the dropdown bar and click on the disable option. Submit your changes. This time, when someone goes to your profile page, your bio is now visible to them. This does not affect the API route with either setting, but may come soon when needed.

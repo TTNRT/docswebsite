@@ -1,5 +1,5 @@
 ---
-title: Creating your account
+title: Creating an account
 ---
 This page will go over creating your account for myTT
 
