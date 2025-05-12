@@ -12,7 +12,7 @@ For more information on what Renovate is, please see the documentation for it [h
 :::
 
 ## What you can use with it
-While the software that runs this bot is very simple to do, it includes almost all of the major programming languages that you use with your applications you host on TTGit. Some examples of programming langages include the following.
+While the software that runs this bot is very simple to do, it includes almost all of the major programming languages that you use with your applications you host on TTGit. Some examples of programming languages include the following.
 
 - NodeJS
 - Ruby on Rails
@@ -23,7 +23,7 @@ And many more, but just to name a few that we know of!
 
 ## Setting it up
 ### Adding the required files
-For setting up the bot with your repsitory, you need to add one file per the requirements that Renovate is looking for. This file should be named `renovate.json` and located in the root directory of your repository. Below is what the file should have it's contents look like. You may copy the contents below if you want.
+For setting up the bot with your repository, you need to add one file per the requirements that Renovate is looking for. This file should be named `renovate.json` and located in the root directory of your repository. Below is what the file should have it's contents look like. You may copy the contents below if you want.
 
 ```json
 {
@@ -45,12 +45,14 @@ For setting up the bot with your repsitory, you need to add one file per the req
 ```
 
 ### Adding the bot
-Once you have you have commited the file to your repository, you need to add the bot as a contributor so that the bot has the required permissions to access your repository. If you don't do this, then the bot won't be able to access any of your source code. For adding the bot, go to your repository settings. From there, click on the "Collaborators" link located on the sidebar to the left. Click on the input box labled, "Search users", and search for the name, "renovate-bot". Once the bot has appeared, click on it, and you are done setting up the bot for your repository.
+Once you have you have commited the file to your repository, you need to add the bot as a contributor so that the bot has the required permissions to access your repository. If you don't do this, then the bot won't be able to access any of your source code. For adding the bot, go to your repository settings. From there, click on the "Collaborators" link located on the sidebar to the left. Click on the input box labled, "Search users", and search for the name, "renovate-bot". Once the bot has appeared, click on it, and you are done setting up the bot for your repository. If you are a bit lost on doing the steps above, see the image below!
+
+![addthebot-renovate](/images/renovatebot-setup.gif)
 
 Now that you have setted up the bot for your repository, let's move on to how the bot will work with your programming language.
 
 ## How you would get alerts
-Think about how the GitHub dependabot system functions. It works the exact same way as the Renovate bot does, such as making alerts based on what ever dependencies you have that are required to be upgraded or have a vulerability in them. Types of alerts can be as follows.
+Think about how the GitHub dependabot system functions. It works the exact same way as the Renovate bot does, such as making alerts based on what ever dependencies you have that are required to be upgraded or have a vulnerability in them. Types of alerts can be as follows.
 
 - Security-based (if a package has a security vulnerability in it)
 - General upgrade (if a package has a new update for it)
@@ -60,7 +62,7 @@ The Renovate bot gives you alerts by submitting to the issue system to your repo
 ## What to expect
 While the software that is controlling the bot is great and all, it might have some issues attached with it. Below are what you might experience while using the bot.
 
-### Not all repositorys can be found
+### Not all repositories can be found
 The software uses the TTGit API as it's base and to control the user it functions with. The software only checks if a repository has the require file as stated above, and the bot account you've added to your repository. At times, it might even crash or won't respond in time.
 
 ### Not all programing languages are supported
