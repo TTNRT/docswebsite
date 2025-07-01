@@ -4,14 +4,16 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	devToolbar: {
+		enabled: false
+	},
 	image: {
-		// Example: Enable the Sharp-based image service with a custom config
 		service: {
-		   entrypoint: 'astro/assets/services/sharp',
-		   config: {
-			 limitInputPixels: false,
-		  },
-		 },
+		   	entrypoint: 'astro/assets/services/sharp',
+		   	config: {
+			 	limitInputPixels: false,
+		  	},
+		},
 	},
 	integrations: [
 		starlight({
@@ -23,6 +25,7 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/logo.png',
 			},
+			favicon: 'favicon.png',
 			editLink: {
 				baseUrl: 'https://github.com/TTNRT/docswebsite/edit/main/',
 			},
@@ -62,18 +65,6 @@ export default defineConfig({
 							]
 						},
 						{
-							label: 'Setup your Git client',
-							slug: 'ttgit/setupgitclient'
-						},
-						{
-							label: 'Setting up TTPages',
-							slug: 'ttgit/setupttpages'
-						},
-						{
-							label: 'Using an IDE editor',
-							slug: 'ttgit/usinganide'
-						},
-						{
 							label: 'Login methods',
 							items: [
 								{
@@ -89,6 +80,27 @@ export default defineConfig({
 									slug: 'ttgit/loginmethods/github'
 								}
 							]
+						},
+						{
+							label: 'Authentication',
+							items: [
+								{
+									label: 'The use of Access Tokens',
+									slug: 'ttgit/authentication/the-use-of-access-tokens'
+								}
+							]
+						},
+						{
+							label: 'Setup your Git client',
+							slug: 'ttgit/setupgitclient'
+						},
+						{
+							label: 'Setting up TTPages',
+							slug: 'ttgit/setupttpages'
+						},
+						{
+							label: 'Using an IDE editor',
+							slug: 'ttgit/usinganide'
 						}
 					],
 				},
