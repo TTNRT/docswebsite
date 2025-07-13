@@ -42,7 +42,6 @@ Go back to your repository that you added to the CI interface. You want to add a
 To start off, we'll make a yaml file inside the repository. You should know on how the syntax goes, if not, lookup on Google on doing so. The file should be called `.woodpecker.yml` when you create it. Below is an example on how the workflow would look like.
 
 ```yaml
-# Taken from here: https://git.ttnrtsite.me/actions/woodpecker-ci
 steps:
   greeting:
     image: ubuntu

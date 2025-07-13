@@ -95,10 +95,6 @@ export default defineConfig({
 							slug: 'ttgit/setupgitclient'
 						},
 						{
-							label: 'Setting up TTPages',
-							slug: 'ttgit/setupttpages'
-						},
-						{
 							label: 'Using an IDE editor',
 							slug: 'ttgit/usinganide'
 						}
@@ -166,6 +162,23 @@ export default defineConfig({
 									slug: 'api/mytt/profile-banner'
 								}
 							]
+						}
+					]
+				},
+				{
+					label: 'TTPages',
+					items: [
+						{
+							label: 'Setting it up',
+							slug: 'ttpages/setting-it-up'
+						},
+						{
+							label: 'FAQ',
+							slug: 'ttpages/faq'
+						},
+						{
+							label: 'Deployment configs',
+							slug: 'ttpages/deployment-configs'
 						}
 					]
 				}
