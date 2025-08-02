@@ -1,8 +1,7 @@
 ---
 title: Renovate Bot
+description: This page will go over on setting up the Renovate Bot with your repository.
 ---
-
-This page will go over on setting up the Renovate Bot with your repository.
 
 ## What is Renovate
 Renovate is an open-source utility that gives you updates on whatever packages you have in your repository to be upgraded or not. Much like how the GitHub dependabot works, it works using the same methods as dependabot does.

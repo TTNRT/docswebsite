@@ -1,8 +1,7 @@
 ---
-title: "Privacy settings"
+title: Privacy settings
+description: This page will go over your account privacy settings
 ---
-
-This page will go over your account privacy settings
 
 ## Information
 You may notice that some account services have ways to hide some of your personal information, such as your profile page and even your bio. For myTT, that's exactly what we offer here! Our latest update for the 17th of March includes the use to set your privacy settings. Some of these settings you can change are as follows:

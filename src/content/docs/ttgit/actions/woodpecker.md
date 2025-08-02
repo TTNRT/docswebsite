@@ -1,12 +1,11 @@
 ---
 title: Woodpecker CI
+description: This section will go over on using the Woodpecker CI service.
 ---
 
 :::note
 The CI interface is only available for those who requested it. It is not available for public users. If you would like to request access to the CI, contact us using our email!
 :::
-
-This section will go over on using the Woodpecker CI service.
 
 ## Requirements
 Before you get excited on using our CI service, please make sure you have following below:

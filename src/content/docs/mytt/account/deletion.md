@@ -1,8 +1,7 @@
 ---
 title: Deleting your account
+description: This section will go over deleting your MyTT account.
 ---
-
-This section will go over deleting your MyTT account.
 
 ## Information
 When you want to delete your account, you have to know these guidelines below and what risks that you are taking when doing so.

@@ -1,8 +1,7 @@
 ---
 title: Setting it up
+description: Follow this quick start guide to get your site up and running with TTPages.
 ---
-
-Follow this quick start guide to get your site up and running with TTPages.
 
 ## General requirements
 

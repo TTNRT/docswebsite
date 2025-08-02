@@ -31,6 +31,57 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: 'Our policy documents',
+					items: [
+						{
+							label: 'Table of contents',
+							slug: 'polices'
+						},
+						{
+							label: 'Terms and conditions',
+							items: [
+								{
+									label: 'Age requirements',
+									slug: 'polices/terms-of-use/age-requirements'
+								},
+								{
+									label: 'Content checking',
+									slug: 'polices/terms-of-use/content-checking'
+								},
+								{
+									label: 'Contributing to our projects',
+									slug: 'polices/terms-of-use/contributing-to-our-projects'
+								},
+								{
+									label: 'Copyright handling',
+									slug: 'polices/terms-of-use/copyright-handling'
+								},
+								{
+									label: 'Service violations',
+									slug: 'polices/terms-of-use/service-violations'
+								}
+							]
+						},
+						{
+							label: 'Other documents',
+							items: [
+								{
+									label: 'Checking your account',
+									slug: 'polices/other/checking-your-account'
+								},
+								{
+									label: 'Getting support',
+									slug: 'polices/other/getting-support'
+								},
+								{
+									label: 'Sending feedback',
+									slug: 'polices/other/sending-feedback'
+								}
+							]
+						},
+					]
+				},
+				{
 					label: 'TTGit',
 					items: [
 						// Each item here is one entry in the navigation menu.

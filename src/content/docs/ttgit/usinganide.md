@@ -1,8 +1,7 @@
 ---
 title: Using an IDE editor
+description: This page will cover on using an IDE editor with TTGit.
 ---
-
-This page will cover on using an IDE editor with TTGit.
 
 :::caution
 This page doesn't have enough information and will need to be improved later on.

@@ -1,7 +1,7 @@
 ---
 title: Information
+description: This page will go over the use and what you can do with the TTNRT API
 ---
-This page will go over the use and what you can do with the TTNRT API
 
 ## What the API is about
 The TTNRT API allows users to access data from all across the TTNRT network and can grab data such their account data on MyTT, services list, and many more! When you send a request to the main page of the API site, you can get a response that would look something like this.

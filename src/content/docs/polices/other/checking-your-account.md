@@ -1,0 +1,4 @@
+---
+title: Checking your account
+---
+When you sign up for an account on a service, like myTT, you are needed to verify it to see if you are a real human. However, if there is activity that we find not okay or offensive, you are violating the terms of use. TTNRT has the right to disable or suspend an account, all or on a service that you have signed up for. Your account data is protected under our code, but we still have rights to access it and review it. When you post or update something, like your bio on myTT for example, it has to be reviewed. See the violations section below for more information.

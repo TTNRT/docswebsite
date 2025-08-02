@@ -1,0 +1,4 @@
+---
+title: Getting support
+---
+We offer many ways you can receive support from us. You can use our email, join our Discord server, or something else if these don’t fit your needs. However, it’s important to note the support hours, which can vary depending on current events or something else. Remember that not all support emails can be seen by us, so you should give some time to check our other emails before we get to yours. Do not send more than 2 emails at the same time if we don’t respond to you in time. Our email server has rate limits applied to it, so spamming it will deny you from sending any more emails for a little bit of time before you can try again.
