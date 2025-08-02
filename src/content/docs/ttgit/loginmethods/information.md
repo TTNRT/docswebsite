@@ -1,5 +1,6 @@
 ---
 title: Information
+description: This page will go over on the login methods that we provide for your TTGit account
 ---
 For the most part, we use the default username and password login method. However, we offer additional methods of logging in to your account. Some providers that we use can be as follows:
 

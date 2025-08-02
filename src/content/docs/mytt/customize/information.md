@@ -1,5 +1,6 @@
 ---
 title: Information
+description: A bit of helpful information when you are using myTT
 ---
 
 You may think that we have a limited number of additions for adding to your profile page, and this is true. We know that myTT is a work in progress, and should be treated like that. Here are some profile additions you can add to your profile page.

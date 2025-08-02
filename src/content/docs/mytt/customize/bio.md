@@ -1,5 +1,6 @@
 ---
 title: Bio widget
+description: Our guide to adding a bio for your mytt profile
 ---
 Think of a bio about who you are, your interests, what you like or to do, or anything in general. When you have a bio, all of the information from it will be displayed publicly to everyone, including those that are not logged in. We use Markdown-it to assist with formatting your bio, along with some additional extensions you might also need with it.
 

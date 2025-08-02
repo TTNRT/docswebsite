@@ -1,5 +1,6 @@
 ---
 title: Banner widget
+description: Our guide to adding a banner code for your mytt profile
 ---
 
 Currently, the user banner only uses color codes. If you need to grab a color code, you can lookup tools that can give you a color code, or by using our color grab tool in the "Tools" page. By default, there is no banner set when you create your account, and is only an optional feature. To change your banner color, go to your account settings and find where the profile section is located. Type in any color code into the form. 

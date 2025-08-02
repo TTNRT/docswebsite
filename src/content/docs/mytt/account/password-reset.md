@@ -1,7 +1,7 @@
 ---
 title: Resetting your password
+description: This page will go over the password reset process for your myTT account.
 ---
-This page will go over the password reset process for your myTT account.
 
 ## Information
 When you request to have your password reset, you have to make sure you have it changed to a more secure one that you can remember. Creating password should be at least 8 characters long or more, along with having a symbol, or number in it.

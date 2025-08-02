@@ -1,0 +1,4 @@
+---
+title: Age requirements
+---
+When you use our services, you agree that you are following the required age requirement, as well as being formal and friendly to our staff, and others. The current age requirement for all services is at least **13 years old**. This age goes for any site you go on, such as Discord or Reddit for example. If you are willing to use our services, you need to verify to us that you are 13 years of age, along with understanding our terms and conditions when doing so. If you are found to not be 13 years old, you may need to stop use of all services that you signed up for until your 13th birthday occurs. If you are still not 13 or are found to still be, a staff member may need to suspend your rights to all services you use. This rule follows the COPA (Child Online Privacy Act) laws.

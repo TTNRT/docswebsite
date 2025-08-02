@@ -1,7 +1,7 @@
 ---
 title: Creating an account
+description: This page will go over creating your account for myTT
 ---
-This page will go over creating your account for myTT
 
 ## Information
 Before you create your account, you need to follow the guidelines as stated below.

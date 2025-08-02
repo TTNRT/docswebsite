@@ -1,5 +1,6 @@
 ---
 title: FAQ
+description: If you have any questions reguarding TTPages, here are some you might ask us about
 ---
 
 > Q: What is it about?
