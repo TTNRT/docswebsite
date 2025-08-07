@@ -1,0 +1,9 @@
+name = "ttnrt-documentation"
+compatibility_date = "2025-05-25"
+
+routes = [
+  { pattern = "docs.ttnrtsite.me", custom_domain = true }
+]
+
+[assets]
+directory = "./dist"
