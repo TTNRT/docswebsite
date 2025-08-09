@@ -1,6 +1,7 @@
 ---
 title: Creating an account
 description: This page will go over creating your account for myTT
+draft: true
 ---
 
 ## Information
