@@ -25,10 +25,12 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/logo.png',
 			},
+			pagination: false,
+			lastUpdated: true,
 			favicon: 'favicon.png',
-			editLink: {
-				baseUrl: 'https://github.com/TTNRT/docswebsite/edit/main/',
-			},
+			customCss: [
+				'./src/styles/default-styles.css'
+			],
 			sidebar: [
 				{
 					label: 'Our policy documents',
@@ -39,116 +41,33 @@ export default defineConfig({
 						},
 						{
 							label: 'Terms and conditions',
-							items: [
-								{
-									label: 'Age requirements',
-									slug: 'polices/terms-of-use/age-requirements'
-								},
-								{
-									label: 'Content checking',
-									slug: 'polices/terms-of-use/content-checking'
-								},
-								{
-									label: 'Contributing to our projects',
-									slug: 'polices/terms-of-use/contributing-to-our-projects'
-								},
-								{
-									label: 'Copyright handling',
-									slug: 'polices/terms-of-use/copyright-handling'
-								},
-								{
-									label: 'Service violations',
-									slug: 'polices/terms-of-use/service-violations'
-								}
-							]
+							autogenerate: {directory: 'polices/terms-of-use'}
 						},
 						{
 							label: 'Other documents',
-							items: [
-								{
-									label: 'Checking your account',
-									slug: 'polices/other/checking-your-account'
-								},
-								{
-									label: 'Getting support',
-									slug: 'polices/other/getting-support'
-								},
-								{
-									label: 'Sending feedback',
-									slug: 'polices/other/sending-feedback'
-								}
-							]
+							autogenerate: {directory: 'polices/other'}
 						},
 					]
 				},
 				{
 					label: 'TTGit',
 					items: [
-						// Each item here is one entry in the navigation menu.
 						{ 
 							label: 'Actions interface', 
-							items: [
-								{
-									label: 'Woodpekcer CI',
-									slug: 'ttgit/actions/woodpecker'
-								},
-								{
-									label: 'Standard actions',
-									slug: 'ttgit/actions/actions'
-								},
-								{
-									label: 'Renovate bot',
-									slug: 'ttgit/actions/renovate-bot'
-								}
-							]
+							autogenerate: {directory: 'ttgit/actions'}
 						},
 						{
 							label: 'Customize your account',
-							items: [
-								{
-									label: 'Overview widget',
-									slug: 'ttgit/customize/overview'
-								},
-								{
-									label: 'Profile bio',
-									slug: 'ttgit/customize/bio'
-								}
-							]
+							autogenerate: {directory: 'ttgit/customize'}
 						},
 						{
 							label: 'Login methods',
-							items: [
-								{
-									label: 'Information',
-									slug: 'ttgit/loginmethods/information'
-								},
-								{
-									label: 'Google',
-									slug: 'ttgit/loginmethods/google'
-								},
-								{
-									label: 'GitHub',
-									slug: 'ttgit/loginmethods/github'
-								}
-							]
+							autogenerate: {directory: 'ttgit/loginmethods'}
 						},
 						{
 							label: 'Authentication',
-							items: [
-								{
-									label: 'The use of Access Tokens',
-									slug: 'ttgit/authentication/the-use-of-access-tokens'
-								}
-							]
+							autogenerate: {directory: 'ttgit/authentication'}
 						},
-						{
-							label: 'Setup your Git client',
-							slug: 'ttgit/setupgitclient'
-						},
-						{
-							label: 'Using an IDE editor',
-							slug: 'ttgit/usinganide'
-						}
 					],
 				},
 				{
@@ -156,41 +75,11 @@ export default defineConfig({
 					items: [
 						{
 							label: 'Account management',
-							items: [
-								{
-									label: 'Creating an account',
-									slug: 'mytt/account/creating'
-								},
-								{
-									label: 'Deleting your account',
-									slug: 'mytt/account/deletion'
-								},
-								{
-									label: 'Resetting your password',
-									slug: 'mytt/account/password-reset'
-								},
-								{
-									label: 'Privacy settings',
-									slug: 'mytt/account/privacy-settings'
-								}
-							]
+							autogenerate: {directory: 'mytt/account'}
 						},
 						{
 							label: 'Customize your profile',
-							items: [
-								{
-									label: 'Information',
-									slug: 'mytt/customize/information'
-								},
-								{
-									label: 'Bio widget',
-									slug: 'mytt/customize/bio'
-								},
-								{
-									label: 'Banner widget',
-									slug: 'mytt/customize/banner'
-								}
-							]
+							autogenerate: {directory: 'mytt/customize'}
 						}
 					]
 				},
@@ -203,35 +92,13 @@ export default defineConfig({
 						},
 						{
 							label: 'myTT',
-							items: [
-								{
-									label: 'Requesting data',
-									slug: 'api/mytt/request-data'
-								},
-								{
-									label: 'Profile banner',
-									slug: 'api/mytt/profile-banner'
-								}
-							]
+							autogenerate: {directory: 'api/mytt'}
 						}
 					]
 				},
 				{
 					label: 'TTPages',
-					items: [
-						{
-							label: 'Setting it up',
-							slug: 'ttpages/setting-it-up'
-						},
-						{
-							label: 'FAQ',
-							slug: 'ttpages/faq'
-						},
-						{
-							label: 'Deployment configs',
-							slug: 'ttpages/deployment-configs'
-						}
-					]
+					autogenerate: {directory: 'ttpages'}
 				}
 			],
 		}),
