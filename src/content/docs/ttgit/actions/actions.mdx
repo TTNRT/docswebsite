@@ -1,0 +1,92 @@
+---
+title: Standard actions
+description: This page will go over on how to setup TTGit actions and how you can use them with your repository
+---
+import { Steps } from '@astrojs/starlight/components';
+
+## Requirements
+In order to use the actions interface, you need to have the following installed or setup on whatever device you will be running it on.
+
+1. The latest version of Docker installed
+    - This is a general requirement as the interface uses it to run your workflows inside of a container! If you need help on how to install it, please refer to the [Docker documentation](https://docs.docker.com/get-started/get-docker/).
+2. A fully working account on TTGit
+    - Make sure that your account is fully activated and that you have a secure password set on it before going forward!
+3. A repository of your chossing
+    - Make sure that the actions permission is enabled so that your runner knows what it's targeting too and the workflows it has to run on it!
+
+:::caution
+Some devices may require you to have virtualization enabled in your devices BIOS in order to run docker correctly. We don't have any steps on how you can do this, but may be stated if your device came with a manual. If you need to, you may Google on how to enable this feature. Note that this is an important feature to enable if you are using a Windows machine to run the runner container!
+:::
+
+## Installation proccess
+Below are the steps to setting up your runner with your Docker installation. In this case, we will be using a Windows machine as an example.
+
+<Steps>
+
+1. Click on this [link](https://dl.gitea.com/act_runner/) and download the latest version and the correct one that will run on your computer's hardware.
+2. Once you have it downloaded, move the application to any location of your chossing. In this case, we will move it to the `C:\` drive.
+3. Open the Docker Desktop application before running the application. This is so that the runner knows that Docker is running in the background without any issues.
+
+</Steps>
+
+## Creating the runner
+Below are the steps to creating your runner.
+
+<Steps>
+
+1. Login into your TTGit account and go into your account settings.
+2. On the sidebar to the left, click on the "Actions" dropdown and click on the "Runners" link.
+3. Click on the "Create new Runner" dropdown button. In it, you will see a registration token that will be needed for the runner to function and operate.
+4. Go back to the location where you moved the runner application and open a command line application inside of it. In this case, it's going to be the `C:\` drive.
+5. Run the following command in the command window. `./act_runner register`. Proceed to the next section to continue with this step.
+
+</Steps>
+
+### Creating the runner (part 2)
+The command window will ask you to enter the instance URL. Type in this for the website: `https://git.ttnrtsite.me`. Once you have that done, you need to paste in the generated registration token from the previous step. Copy the token and paste it into the command window. Make sure that it's the correct one to avoid any errors. The last two steps are optional but you can customize it if you want, otherwise you are pretty much done with registering the runner! An example of the entire proccess is shown below.
+
+```
+INFO Registering runner, arch=amd64, os=darwin, version=0.1.5.
+WARN Runner in user-mode.
+INFO Enter the Gitea instance URL (for example, https://gitea.com/):
+http://192.168.8.8:3000/
+INFO Enter the runner token:
+fe884e8027dc292970d4e0303fe82b14xxxxxxxx
+INFO Enter the runner name (if set empty, use hostname: Test.local):
+
+INFO Enter the runner labels, leave blank to use the default labels (comma-separated, for example, ubuntu-latest:docker://gitea/runner-images:ubuntu-latest):
+
+INFO Registering runner, name=Test.local, instance=http://192.168.8.8:3000/, labels=[ubuntu-latest:docker://gitea/runner-images:ubuntu-latest ubuntu-22.04:docker://gitea/runner-images:ubuntu-22.04 ubuntu-20.04:docker://gitea/runner-images:ubuntu-20.04].
+DEBU Successfully pinged the Gitea instance server
+INFO Runner registered successfully.
+```
+
+If you wanted to, you can use the command below to register the runner using it's agruements to make the proccess a bit easier to do.
+
+## Running it
+Below are the ways of how to run your actions runner.
+
+### Docker method
+:::note
+When you use this command, make sure that you have the instance URL and the registration token added to ensure that the container will run correctly without any issues.
+:::
+
+```bash
+docker run \
+    -e GITEA_INSTANCE_URL=https://git.ttnrtsite.me \
+    -e GITEA_RUNNER_REGISTRATION_TOKEN=your_token \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    --name my_runner \
+    gitea/act_runner:nightly
+```
+
+### Standalone method
+```bash
+./act_runner daemon
+```
+
+## Results
+Once you go back to the runners page in your account settings, your runner should appear and say that it's online and ready to go! If it does not say that, you may need to fix something in your actions runner.
+
+## Examples of Workflow configurations
+If you want to see some examples of workflow configurations, see the repository for it [here](https://gitea.com/gitea/act_runner/src/branch/main/examples) to find out!

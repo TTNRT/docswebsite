@@ -1,5 +1,5 @@
 ---
-title: Contributing to our projects
+title: Company projects
 ---
 
 ## Information
