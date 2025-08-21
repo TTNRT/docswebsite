@@ -7,7 +7,7 @@ description: This page will go over your account privacy settings
 You may notice that some account services have ways to hide some of your personal information, such as your profile page and even your bio. For myTT, that's exactly what we offer here! Our latest update for the 17th of March includes the use to set your privacy settings. Some of these settings you can change are as follows:
 
 - Private your profile page from others
-- Hide your bio from others
+- ~~Hide your bio from others~~
 
 When you set any of these, only you are allowed to see them, while others cannot see them, even if they are logged in or not. Let's go over on these settings!
 
@@ -35,6 +35,10 @@ Additionally, if you set this setting, the API route for grabbing a user's data,
 ```
 
 ## Hide your bio
+:::caution
+This setting is no longer available for anyone to use and it has been replaced with the "Hide profile page" setting. This will be revised in a future update soon!
+:::
+
 By default, your bio is not hidden from anyone. To hide your bio, go to your account privacy settings. Find where the "Hide your bio" section is at. Click on the select dropdown. The list includes the following
 
 - Enable

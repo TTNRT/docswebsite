@@ -29,3 +29,11 @@ This section is incomplete! Check back later when we make a change/addition to i
 - [Checking your account](/polices/other/checking-your-account)
 - [Getting support](/polices/other/getting-support)
 - [Sending feedback](/polices/other/sending-feedback)
+
+## Contribution guidelines
+### Information
+- Revised since: Augest 1st, 2025
+- Updated on: Augest 1st, 2025
+
+### Pages
+- [Company projects](/polices/contributions/company-projects)

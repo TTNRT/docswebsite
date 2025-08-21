@@ -44,6 +44,10 @@ export default defineConfig({
 							autogenerate: {directory: 'polices/terms-of-use'}
 						},
 						{
+							label: 'Contributions guidelines',
+							autogenerate: {directory: 'polices/contributions'}
+						},
+						{
 							label: 'Other documents',
 							autogenerate: {directory: 'polices/other'}
 						},
@@ -53,16 +57,12 @@ export default defineConfig({
 					label: 'TTGit',
 					items: [
 						{ 
-							label: 'Actions interface', 
+							label: 'Workflow interfaces', 
 							autogenerate: {directory: 'ttgit/actions'}
 						},
 						{
 							label: 'Customize your account',
 							autogenerate: {directory: 'ttgit/customize'}
-						},
-						{
-							label: 'Login methods',
-							autogenerate: {directory: 'ttgit/loginmethods'}
 						},
 						{
 							label: 'Authentication',
@@ -80,19 +80,19 @@ export default defineConfig({
 						{
 							label: 'Customize your profile',
 							autogenerate: {directory: 'mytt/customize'}
+						},
+						{
+							label: 'API refernece',
+							autogenerate: {directory: 'mytt/api'}
 						}
 					]
 				},
 				{
-					label: 'API',
+					label: 'References',
 					items: [
 						{
-							label: 'Information',
-							slug: 'api/information'
-						},
-						{
-							label: 'myTT',
-							autogenerate: {directory: 'api/mytt'}
+							label: 'The use of our API',
+							slug: 'references/using-the-api'
 						}
 					]
 				},
