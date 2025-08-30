@@ -1,4 +1,4 @@
-name = "ttnrt-documentation"
+name = "documentation-site"
 compatibility_date = "2025-05-25"
 
 routes = [
