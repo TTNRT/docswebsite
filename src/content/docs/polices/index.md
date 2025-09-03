@@ -37,3 +37,4 @@ This section is incomplete! Check back later when we make a change/addition to i
 
 ### Pages
 - [Company projects](/polices/contributions/company-projects)
+- [Editing our documentation](/polices/contributions/editing-our-documentation)

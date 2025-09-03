@@ -1,11 +1,7 @@
 ---
-title: Requesting data
-description: This page will go over on requesting your myTT account data via the TTNRT API.
+title: Requesting user data
+description: This page will go over on requesting a user's profile from the API backend
 ---
-
-:::note
-This route has been moved to the myTT API routes. The URL will be different in this section!
-:::
 
 ## Information
 The myTT API has some routes for it to operate, but can also grab your account data based on your account ID. This is can be done with a simple URL request and your data will popup instantly!

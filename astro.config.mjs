@@ -17,8 +17,8 @@ export default defineConfig({
 	},
 	integrations: [
 		starlight({
-			title: 'TTNRT Docs',
-			description: 'Our documentation website for our services',
+			title: 'TTNRT Developer documentation',
+			description: 'Our documentation website containing all of our knowledge base documents!',
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/TTNRT' }
 			],
@@ -54,6 +54,19 @@ export default defineConfig({
 					]
 				},
 				{
+					label: 'API backends',
+					items: [
+						{
+							label: 'myTT',
+							autogenerate: {directory: 'api/mytt'}
+						},
+						{
+							label: 'TTGit',
+							autogenerate: {directory: 'api/ttgit'}
+						}
+					]
+				},
+				{
 					label: 'TTGit',
 					items: [
 						{ 
@@ -81,19 +94,6 @@ export default defineConfig({
 							label: 'Customize your profile',
 							autogenerate: {directory: 'mytt/customize'}
 						},
-						{
-							label: 'API refernece',
-							autogenerate: {directory: 'mytt/api'}
-						}
-					]
-				},
-				{
-					label: 'References',
-					items: [
-						{
-							label: 'The use of our API',
-							slug: 'references/using-the-api'
-						}
 					]
 				},
 				{
