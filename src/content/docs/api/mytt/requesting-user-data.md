@@ -29,7 +29,7 @@ The response will look something like this.
 
 ```json
 {
-  "stauts": 200,
+  "status": 200,
   "data": {
     "id": 1,
     "username": "username",

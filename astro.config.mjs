@@ -25,6 +25,9 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/logo.png',
 			},
+			editLink: {
+				baseUrl: 'https://pr.new/github.com/TTNRT/docswebsite/edit/main/'
+			},
 			pagination: false,
 			lastUpdated: true,
 			favicon: 'favicon.png',

@@ -11,20 +11,20 @@ In order to use the actions interface, you need to have the following installed 
     - This is a general requirement as the interface uses it to run your workflows inside of a container! If you need help on how to install it, please refer to the [Docker documentation](https://docs.docker.com/get-started/get-docker/).
 2. A fully working account on TTGit
     - Make sure that your account is fully activated and that you have a secure password set on it before going forward!
-3. A repository of your chossing
+3. A repository of your choosing
     - Make sure that the actions permission is enabled so that your runner knows what it's targeting too and the workflows it has to run on it!
 
 :::caution
 Some devices may require you to have virtualization enabled in your devices BIOS in order to run docker correctly. We don't have any steps on how you can do this, but may be stated if your device came with a manual. If you need to, you may Google on how to enable this feature. Note that this is an important feature to enable if you are using a Windows machine to run the runner container!
 :::
 
-## Installation proccess
+## Installation process
 Below are the steps to setting up your runner with your Docker installation. In this case, we will be using a Windows machine as an example.
 
 <Steps>
 
 1. Click on this [link](https://dl.gitea.com/act_runner/) and download the latest version and the correct one that will run on your computer's hardware.
-2. Once you have it downloaded, move the application to any location of your chossing. In this case, we will move it to the `C:\` drive.
+2. Once you have it downloaded, move the application to any location of your choosing. In this case, we will move it to the `C:\` drive.
 3. Open the Docker Desktop application before running the application. This is so that the runner knows that Docker is running in the background without any issues.
 
 </Steps>
@@ -43,7 +43,7 @@ Below are the steps to creating your runner.
 </Steps>
 
 ### Creating the runner (part 2)
-The command window will ask you to enter the instance URL. Type in this for the website: `https://git.ttnrtsite.me`. Once you have that done, you need to paste in the generated registration token from the previous step. Copy the token and paste it into the command window. Make sure that it's the correct one to avoid any errors. The last two steps are optional but you can customize it if you want, otherwise you are pretty much done with registering the runner! An example of the entire proccess is shown below.
+The command window will ask you to enter the instance URL. Type in this for the website: `https://git.ttnrtsite.me`. Once you have that done, you need to paste in the generated registration token from the previous step. Copy the token and paste it into the command window. Make sure that it's the correct one to avoid any errors. The last two steps are optional but you can customize it if you want, otherwise you are pretty much done with registering the runner! An example of the entire process is shown below.
 
 ```
 INFO Registering runner, arch=amd64, os=darwin, version=0.1.5.
@@ -61,7 +61,7 @@ DEBU Successfully pinged the Gitea instance server
 INFO Runner registered successfully.
 ```
 
-If you wanted to, you can use the command below to register the runner using it's agruements to make the proccess a bit easier to do.
+If you wanted to, you can use the command below to register the runner using it's arguments to make the process a bit easier to do.
 
 ## Running it
 Below are the ways of how to run your actions runner.

@@ -1,6 +1,6 @@
 ---
 title: Deployment configs
-description: Here are some deployment configuration examples on whatever static site generater that is supported by TTPages.
+description: Here are some deployment configuration examples on whatever static site generator that is supported by TTPages.
 ---
 
 ## Jekyll

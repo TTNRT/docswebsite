@@ -12,17 +12,17 @@ Remember that it’s optional to upload a screenshot, but it’s recommended to 
 ## Describing your issue/problem
 When you're describing the problem you’re facing, it’s important to have detailed information about the issue itself and if you were able to resolve the issue or not. Here’s what you should at least include in your description.
 
-* When did the issue occur  
-* What site or service did you see this issue on  
-* If you were able to reproduce the issue or not  
-* What device you noticed the issue on (examples are below)  
-    * On a mobile device  
+* When did the issue occur
+* What site or service did you see this issue on
+* If you were able to reproduce the issue or not
+* What device you noticed the issue on (examples are below)
+    * On a mobile device
     * On a computer
 
 You should also check for the following as well
 
-* Any spelling errors  
-* Any grammar mistakes  
+* Any spelling errors
+* Any grammar mistakes
 * Where you should have punctuation
 
 If any of these requirements are not met after you submit your issue, your feedback will be denied. Make sure you use some common sense in your description so that we can understand your problem better. Note that if you have any spelling errors or grammar mistakes, your feedback will still be accepted, regardless of any of the checks above, but you should still check for any of them.

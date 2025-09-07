@@ -5,8 +5,8 @@ description: Here's a list of our company policy documents.
 
 ## Terms of use
 ### Information
-- Revised since: Augest 1st, 2025
-- Updated on: Augest 1st, 2025
+- Revised since: August 1st, 2025
+- Updated on: August 1st, 2025
 
 ### Pages
 - [Age requirements](/polices/terms-of-use/age-requirements)
@@ -22,8 +22,8 @@ This section is incomplete! Check back later when we make a change/addition to i
 
 ## Other documents
 ### Information
-- Revised since: Augest 1st, 2025
-- Updated on: Augest 1st, 2025
+- Revised since: August 1st, 2025
+- Updated on: August 1st, 2025
 
 ### Pages
 - [Checking your account](/polices/other/checking-your-account)
@@ -32,8 +32,8 @@ This section is incomplete! Check back later when we make a change/addition to i
 
 ## Contribution guidelines
 ### Information
-- Revised since: Augest 1st, 2025
-- Updated on: Augest 1st, 2025
+- Revised since: August 1st, 2025
+- Updated on: August 1st, 2025
 
 ### Pages
 - [Company projects](/polices/contributions/company-projects)
