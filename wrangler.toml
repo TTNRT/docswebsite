@@ -1,5 +1,6 @@
 name = "documentation-site"
 compatibility_date = "2025-05-25"
+preview_urls = true
 
 routes = [
   { pattern = "docs.ttnrtsite.me", custom_domain = true }
