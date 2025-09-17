@@ -30,15 +30,15 @@ This website is deployed to Cloudflare Workers, a helpful system that allows us 
 >
 > Please make sure that you have changed the `wrangler.toml` file that is located in the root folder of the repository! Ensure that you have a domain that is on the Cloudflare network and is able to be accessed by the workflow system! The file should look like this.
 > ```toml
->   name = "documentation-site"
->   compatibility_date = "2025-05-25"
->   preview_urls = true
->   routes = [
->       {pattern = "yourdomain.com", custom_domain = true }
->   ]
+> name = "documentation-site"
+> compatibility_date = "2025-05-25"
+> preview_urls = true
+> routes = [
+>     {pattern = "yourdomain.com", custom_domain = true }
+> ]
 >
->   [assets]
->   directory = "./dist"
+> [assets]
+> directory = "./dist"
 > ```
 
 ### Installing the packages
