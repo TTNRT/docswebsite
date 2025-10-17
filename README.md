@@ -24,7 +24,14 @@ npm run build
 ```
 
 ## Deployment
-This website is deployed to Cloudflare Workers, a helpful system that allows us to host the website in it's static form and is the most trusted system on the internet that most people are relying on! If you are deploying your own version of this site to a worker, you can add your own version of this repository via the Cloudflare dashboard, or you can use the Wrangler CLI command!
+This website is deployed to Cloudflare Workers, a helpful system that allows us to host the website in it's static form and is the most trusted system on the internet that most people are relying on! If you are deploying your own version of this site to a worker, you can deploy it easily using the [quick start method](#quick-start-method), or you can use the [Wrangler CLI method](#cli-method)!
+
+### Quick start method
+If you want to get started on deploying the source code without having to do anything that requires the Wranger CLI, click on the image button below to deploy the source code directly to the Cloudflare Workers platform!
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/TTNRT/docswebsite)
+
+### CLI method
 
 > [!WARNING]
 >
@@ -41,14 +48,14 @@ This website is deployed to Cloudflare Workers, a helpful system that allows us 
 > directory = "./dist"
 > ```
 
-### Installing the packages
+#### Installing the packages
 First of all, you need to install the package for the Wrangler CLI. To do that, type in the following command below!
 
 ```bash
 npm install -g @cloudflare/wrangler
 ```
 
-### Authenticate Wrangler
+#### Authenticate Wrangler
 The next step is to authorize Wrangler with your existing Cloudflare account. To do that, type in the following command below!
 
 ```bash
@@ -57,14 +64,14 @@ wrangler login
 
 When you do this, it will open your default browser and will ask you to authorize it with your cloudflare account. If you are not already logged in with it, make sure that you do that before running the command!
 
-### Deploy the website
-The last step is deploying your website to the worker system. To do that, type in the following command below!
+#### Deploying the source code
+The last step is deploying your website to the workers system. To do that, type in the following command below!
 
 ```bash
 wrangler deploy
 ```
 
-If you want to preview your changes, type in the following command below!
+If you want to preview your changes before you deploy them, type in the following command below!
 
 ```bash
 wrangler dev
