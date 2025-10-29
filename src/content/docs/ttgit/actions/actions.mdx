@@ -49,19 +49,23 @@ The command window will ask you to enter the instance URL. Type in this for the 
 INFO Registering runner, arch=amd64, os=darwin, version=0.1.5.
 WARN Runner in user-mode.
 INFO Enter the Gitea instance URL (for example, https://gitea.com/):
-http://192.168.8.8:3000/
+https://git.ttnrtsite.me/
 INFO Enter the runner token:
 fe884e8027dc292970d4e0303fe82b14xxxxxxxx
 INFO Enter the runner name (if set empty, use hostname: Test.local):
 
 INFO Enter the runner labels, leave blank to use the default labels (comma-separated, for example, ubuntu-latest:docker://gitea/runner-images:ubuntu-latest):
 
-INFO Registering runner, name=Test.local, instance=http://192.168.8.8:3000/, labels=[ubuntu-latest:docker://gitea/runner-images:ubuntu-latest ubuntu-22.04:docker://gitea/runner-images:ubuntu-22.04 ubuntu-20.04:docker://gitea/runner-images:ubuntu-20.04].
+INFO Registering runner, name=Test.local, instance=https://git.ttnrtsite.me/, labels=[ubuntu-latest:docker://gitea/runner-images:ubuntu-latest ubuntu-22.04:docker://gitea/runner-images:ubuntu-22.04 ubuntu-20.04:docker://gitea/runner-images:ubuntu-20.04].
 DEBU Successfully pinged the Gitea instance server
 INFO Runner registered successfully.
 ```
 
 If you wanted to, you can use the command below to register the runner using it's arguments to make the process a bit easier to do.
+
+```bash
+./act_runner register --instance https://git.ttnrtsite.me --token fe884e8027dc292970d4e0303fe82b14xxxxxxxx --no-interactive
+```
 
 ## Running it
 Below are the ways of how to run your actions runner.
