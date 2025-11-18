@@ -3,9 +3,22 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
+const port = 8000
+const domain = import.meta.env.PROD ? 'https://docs.ttnrtsite.me' : `http://localhost:${port}`
 export default defineConfig({
+	site: domain,
+	output: 'static',
+	compressHTML: false,
+	trailingSlash: 'never',
+	server: {
+		host: true,
+		port: port
+	},
 	devToolbar: {
 		enabled: false
+	},
+	build: {
+		format: 'file'
 	},
 	image: {
 		service: {
