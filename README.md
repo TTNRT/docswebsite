@@ -2,10 +2,10 @@
 The source code for our documentation website.
 
 ## Information
-- Deploys to Cloudflare Workers
+- Deploys to GitHub Pages
 - Uses Markdown for the pages
-- Uses Astro
-    - Uses the Starlight template
+- Uses Astro for the website framework
+    - Uses the [Starlight](https://starlight.astro.build/) documentation template
 
 ## How to install it
 
