@@ -29,14 +29,11 @@ The response will look something like this.
 
 ```json
 {
-  "status": 200,
-  "data": {
-    "id": 1,
-    "username": "username",
-    "fullname": "User account",
-    "createdAt": "2024-11-06T22:01:36.000Z",
-    "avatar": "https://my.ttnrtsite.me/usericon.png"
-  }
+  id: 1,
+  username: "john_doe",
+  fullname: "John Doe",
+  createdAt": "2024-11-06T22:01:36.000Z",
+  avatar: "https://my.ttnrtsite.me/usericon.png"
 }
 ```
 

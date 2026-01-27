@@ -71,19 +71,6 @@ export default defineConfig({
 					]
 				},
 				{
-					label: 'API backends',
-					items: [
-						{
-							label: 'myTT',
-							autogenerate: {directory: 'api/mytt'}
-						},
-						{
-							label: 'TTGit',
-							autogenerate: {directory: 'api/ttgit'}
-						}
-					]
-				},
-				{
 					label: 'TTGit',
 					items: [
 						{ 
@@ -98,6 +85,10 @@ export default defineConfig({
 							label: 'Authentication',
 							autogenerate: {directory: 'ttgit/authentication'}
 						},
+						{
+							label: "Using the API",
+							autogenerate: {directory: "ttgit/using-the-api"}
+						}
 					],
 				},
 				{
@@ -111,11 +102,11 @@ export default defineConfig({
 							label: 'Customize your profile',
 							autogenerate: {directory: 'mytt/customize'}
 						},
+						{
+							label: "Using the API",
+							autogenerate: {directory: "mytt/using-the-api"}
+						}
 					]
-				},
-				{
-					label: 'TTPages',
-					autogenerate: {directory: 'ttpages'}
 				}
 			],
 		}),
