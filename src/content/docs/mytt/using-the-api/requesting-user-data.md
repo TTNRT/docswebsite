@@ -10,7 +10,7 @@ The myTT API has some routes for it to operate, but can also grab your account d
 To request your account data, open your preferred browser or API viewer. Enter the URL as defined below.
 
 ```
-https://my.ttnrtsite.me/api/user/USER_ID
+https://my.ttnrtsite.me/user_profile?id=USER_ID
 ```
 
 The variable `USER_ID` is your account ID that you have when you created your account.
@@ -22,7 +22,7 @@ For context on this variable, it's from the database in a row called `id`. When 
 The complete URL will look something like this.
 
 ```
-https://my.ttnrtsite.me/api/user/1
+https://my.ttnrtsite.me/user_profile?id=1
 ```
 
 The response will look something like this.
