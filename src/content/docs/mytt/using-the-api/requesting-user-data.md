@@ -29,11 +29,18 @@ The response will look something like this.
 
 ```json
 {
-  id: 1,
-  username: "john_doe",
-  fullname: "John Doe",
-  createdAt": "2024-11-06T22:01:36.000Z",
-  avatar: "https://my.ttnrtsite.me/usericon.png"
+  "id": 1,
+  "username": "john_doe",
+  "email": "john_doe123@gmail.com",
+  "full_name": "John Doe",
+  "profile": {
+    "about_me_markdown": "**Hello world**",
+    "about_me_html": "<strong>Hello world</strong>",
+    "color_banner": "#2986cc",
+    "private": false,
+    "gravatar_uri": "https://ttnrtsite.me/logos/ttnrtlogo_v3.png"
+  },
+  "created_since": "2026-01-16T15:02:35.000Z"
 }
 ```
 
