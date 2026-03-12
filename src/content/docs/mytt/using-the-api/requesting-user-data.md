@@ -13,11 +13,7 @@ To request your account data, open your preferred browser or API viewer. Enter t
 https://my.ttnrtsite.me/user_profile?id=USER_ID
 ```
 
-The variable `USER_ID` is your account ID that you have when you created your account.
-
-:::note
-For context on this variable, it's from the database in a row called `id`. When you call a number, the database will check if the account associated with the id exists. If the account doesn't exist, then the account is not in the database. Note that the number id ranges from `1` to `100`. So, if your user ID is 2, then use the number 2 in your URL.
-:::
+The variable `USER_ID` is your account ID that you have when you created your account. When you call a number, the database will check if the account associated with the id exists. If the account doesn't exist, then the account is not in the database. Note that the number id ranges from `1` to `100`. So, if your user ID is 2, then use the number 2 in your URL.
 
 The complete URL will look something like this.
 
@@ -25,13 +21,30 @@ The complete URL will look something like this.
 https://my.ttnrtsite.me/user_profile?id=1
 ```
 
-The response will look something like this.
+The JSON schema below is how the response will be layed out as.
+
+```json
+{
+  "id": number,
+  "username": string,
+  "full_name": string,
+  "profile": {
+    "about_me_markdown": string,
+    "about_me_html": string,
+    "color_banner": string,
+    "private": boolean,
+    "gravatar_uri": string
+  },
+  "created_since": string
+}
+```
+
+Using this information that we have from the schema, we can create an example of the response that you will get from the API.
 
 ```json
 {
   "id": 1,
   "username": "john_doe",
-  "email": "john_doe123@gmail.com",
   "full_name": "John Doe",
   "profile": {
     "about_me_markdown": "**Hello world**",
@@ -46,5 +59,24 @@ The response will look something like this.
 
 You can see a part of the account information, this includes the ID, username, full name, creation date, and the avatar (is a gravatar URL). Other parts may be hidden from you to protect the user's privacy, which can be their email in this case.
 
+However, if the user decides to hide their profile data from others by setting the `private` flag to `true`, the response that you will get instead will look like this.
+
+```json
+{
+  "id": null,
+  "username": null,
+  "full_name": null,
+  "profile": {
+    "about_me_markdown": null,
+    "about_me_html": null,
+    "color_banner": null,
+    "private": true,
+    "gravatar_uri": null
+  },
+  "created_since": null
+}
+```
+
 ## What you can do with it
 Using this, you can share your profile by using a script to fetch the data or a similar way to do it. Note that not all data cannot be seen or will be appended to whatever you add the data to. If you want to have a profile banner on your website using the API, you can do so by going to the "Profile banner" in the "myTT" section of our documentation! Again, it's up to you on how you're going to use it!
+

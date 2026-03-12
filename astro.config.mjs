@@ -30,7 +30,7 @@ export default defineConfig({
 	},
 	integrations: [
 		starlight({
-			title: 'TTNRT Developer documentation',
+			title: 'Corporate Documentation',
 			description: 'Our documentation website containing all of our knowledge base documents!',
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/TTNRT' }
