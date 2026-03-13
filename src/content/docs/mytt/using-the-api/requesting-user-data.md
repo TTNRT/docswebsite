@@ -59,21 +59,18 @@ Using this information that we have from the schema, we can create an example of
 
 You can see a part of the account information, this includes the ID, username, full name, creation date, and the avatar (is a gravatar URL). Other parts may be hidden from you to protect the user's privacy, which can be their email in this case.
 
-However, if the user decides to hide their profile data from others by setting the `private` flag to `true`, the response that you will get instead will look like this.
+However, if the user decides to hide their profile data from others by setting the `private` flag to `true`, then you will get this error message instead.
 
 ```json
 {
-  "id": null,
-  "username": null,
-  "full_name": null,
-  "profile": {
-    "about_me_markdown": null,
-    "about_me_html": null,
-    "color_banner": null,
-    "private": true,
-    "gravatar_uri": null
-  },
-  "created_since": null
+  "message": "This user has set their profile information to be private for all users!"
+}
+```
+
+Additionally, if the user that you were looking for doesn't exist in our database, then you will get this error message instead.
+```json
+{
+  "message": "User account doesn't exist!"
 }
 ```
 
