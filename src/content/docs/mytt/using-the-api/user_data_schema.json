@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "myTT Profile Data Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "examples": [
+        1
+      ]
+    },
+    "username": {
+      "type": "string",
+      "examples": [
+        "john_doe"
+      ]
+    },
+    "full_name": {
+      "type": "string",
+      "examples": [
+        "John Doe"
+      ]
+    },
+    "profile": {
+      "type": "object",
+      "properties": {
+        "about_me_markdown": {
+          "type": "string",
+          "examples": [
+            "**Hello world**"
+          ]
+        },
+        "about_me_html": {
+          "type": "string",
+          "examples": [
+            "<strong>Hello world</strong>"
+          ]
+        },
+        "color_banner": {
+          "type": "string",
+          "examples": [
+            "#2986cc"
+          ]
+        },
+        "private": {
+          "type": "boolean"
+        },
+        "gravatar_uri": {
+          "type": "string",
+          "format": "uri",
+          "examples": [
+            "https://ttnrtsite.me/logos/ttnrtlogo_v3.png"
+          ]
+        }
+      },
+      "required": [
+        "about_me_markdown",
+        "about_me_html",
+        "color_banner",
+        "private",
+        "gravatar_uri"
+      ]
+    },
+    "created_since": {
+      "type": "string",
+      "format": "date-time",
+      "examples": [
+        "2026-01-16T15:02:35.000Z"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "username",
+    "full_name",
+    "profile",
+    "created_since"
+  ]
+}
