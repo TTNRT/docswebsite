@@ -21,7 +21,7 @@ The complete URL will look something like this.
 https://my.ttnrtsite.me/user_profile?id=1
 ```
 
-The JSON schema below is how the response will be layed out as. A more detailed JSON schema for the response can also be found [here](https://docs.ttnrtsite.me/mytt/using-the-api/user_data_schema.json). Note that the information in the schema JSON file may be a bit different compared to the example response shown below. You are free to use the schema file as much as you want. If you have any questions about it, please let us know by submitting an issue to the documentation repository.
+The JSON schema below is how the response will be layed out as. A more detailed JSON schema for the response can also be found [here](/user_data_schema.json). Note that the information in the schema JSON file may be a bit different compared to the example response shown below. You are free to use the schema file as much as you want. If you have any questions about it, please let us know by submitting an issue to the documentation repository.
 
 ```json
 {
