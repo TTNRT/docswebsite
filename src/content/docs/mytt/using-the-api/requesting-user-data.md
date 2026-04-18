@@ -28,6 +28,7 @@ The JSON schema below is how the response will be layed out as. A more detailed 
   "id": number,
   "username": string,
   "full_name": string,
+  "roles": string[] | null,
   "profile": {
     "about_me_markdown": string,
     "about_me_html": string,
@@ -46,6 +47,7 @@ Using this information that we have from the schema above, we can create an exam
   "id": 1,
   "username": "john_doe",
   "full_name": "John Doe",
+  "roles": ["Employee"],
   "profile": {
     "about_me_markdown": "**Hello world**",
     "about_me_html": "<strong>Hello world</strong>",
@@ -71,6 +73,13 @@ Additionally, if the user that you were looking for doesn't exist in our databas
 ```json
 {
   "message": "User account doesn't exist!"
+}
+```
+
+Lastly, if the user that you were looking has their account disabled, then you will get this error message instead.
+```json
+{
+  "message": "User account is disabled! Sorry about that!"
 }
 ```
 
