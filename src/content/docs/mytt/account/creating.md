@@ -13,4 +13,4 @@ Before you create your account, you need to follow the guidelines as stated belo
 - Have some respect to others
 
 ## Creating
-Creating your account is very straightforward. You just need to have a username, full name, email (must be verified!), and a secure password that you can remember.
+Creating your account is very straightforward. You just need to have a username, full name, email (must be verified!), and a secure password that you can remember. It is best to have a password that is at least 6 to 8 characters long in order to protect your account more securely.

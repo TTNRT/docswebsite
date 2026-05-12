@@ -1,6 +1,7 @@
 ---
 title: Privacy settings
 description: This page will go over your account privacy settings
+draft: true
 ---
 
 ## Information
