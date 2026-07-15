@@ -22,7 +22,9 @@ By default, your profile page is not hidden from anyone. To hide your profile pa
 
 Click on the enable option and submit your changes. When you go back to your profile page, it's still visible, but only for you! When someone is logged in or not and wants to go to your profile page, they will get this error like this.
 
-![privatepage-example.png](/images/privatepage-example.png)
+:::note
+There should a screenshot here, right? Maybe we didn't add it yet? You can help us out by editing this page!
+:::
 
 This error says that the user has set their privacy settings to hide their profile page from others. If you want to un-hide your profile, go back to your account privacy settings and find the "Hide your profile" section. Click the dropdown bar and click on the disable option. Submit your changes. This time, when someone goes to your profile page, it's now visible to them.
 

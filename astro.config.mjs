@@ -50,44 +50,11 @@ export default defineConfig({
             ],
             sidebar: [
                 {
-                    label: 'Our policy documents',
-                    items: [
-                        {
-                            label: 'Table of contents',
-                            slug: 'polices'
-                        },
-                        {
-                            label: 'Terms and conditions',
-                            items: [{ autogenerate: {directory: "polices/terms-of-use"} }]
-                        },
-                        {
-                            label: 'Contributions guidelines',
-                            items: [{ autogenerate: {directory: "polices/contributions"} }]
-                        },
-                        {
-                            label: 'Other documents',
-                            items: [{ autogenerate: {directory: "polices/other"} }]
-                        },
-                    ]
-                },
-                {
                     label: 'TTGit',
                     items: [
                         {
                             label: 'Workflow interfaces',
                             items: [{ autogenerate: {directory: "ttgit/actions"} }]
-                        },
-                        {
-                            label: 'Customize your account',
-                            items: [{ autogenerate: {directory: "ttgit/customize"} }]
-                        },
-                        {
-                            label: 'Authentication',
-                            items: [{ autogenerate: {directory: "ttgit/authentication"} }]
-                        },
-                        {
-                            label: "Using the API",
-                            items: [{ autogenerate: {directory: "ttgit/using-the-api"} }]
                         }
                     ],
                 },
@@ -97,10 +64,6 @@ export default defineConfig({
                         {
                             label: 'Account management',
                             items: [{ autogenerate: {directory: "mytt/account"} }]
-                        },
-                        {
-                            label: 'Customize your profile',
-                            items: [{ autogenerate: {directory: "mytt/customize"} }]
                         },
                         {
                             label: "Using the API",
