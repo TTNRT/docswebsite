@@ -12,11 +12,9 @@
 
 ## Account Management System
 
-***
-
-* [Creating an account](creating-an-account.md)
-* [Deleting your account](deleting-your-account.md)
-* [Recovering your account](recovering-your-account.md)
-* [Privacy settings](privacy-settings.md)
-* [Helpful resources](helpful-resources.md)
-* [Requesting user data](requesting-user-data.md)
+* [Creating an account](account-management-system/creating-an-account.md)
+* [Deleting your account](account-management-system/deleting-your-account.md)
+* [Recovering your account](account-management-system/recovering-your-account.md)
+* [Privacy settings](account-management-system/privacy-settings.md)
+* [Helpful resources](account-management-system/helpful-resources.md)
+* [Requesting user data](account-management-system/requesting-user-data.md)
