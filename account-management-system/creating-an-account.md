@@ -17,7 +17,5 @@ Before you get all excited about creating an account on our myTT service, you ne
 
 ## Creating your account
 
-{% hint style="info" %}
-This section is incomplete. You can help us out by editing it for us!
-{% endhint %}
+{% include "../.gitbook/includes/incomplete-section-alert.md" %}
 

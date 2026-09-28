@@ -8,6 +8,4 @@ description: >-
 
 ## Overview
 
-{% hint style="info" %}
-This section is incomplete. You can help us out by editing it for us!
-{% endhint %}
+{% include "../.gitbook/includes/incomplete-section-alert.md" %}

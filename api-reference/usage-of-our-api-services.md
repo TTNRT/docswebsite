@@ -12,9 +12,7 @@ We offer a free-to-use, public API server, governed under the GNU license. Most 
 
 ## Usage
 
-{% hint style="info" %}
-This section is incomplete. You can help us out by editing it for us!
-{% endhint %}
+{% include "../.gitbook/includes/incomplete-section-alert.md" %}
 
 ## Available API Services
 
@@ -27,6 +25,4 @@ Note that this list isn't comprehensive, and may have to be updated in the near 
 
 ## FAQ
 
-{% hint style="info" %}
-This section is incomplete. You can help us out by editing it for us!
-{% endhint %}
+{% include "../.gitbook/includes/incomplete-section-alert.md" %}
